@@ -240,7 +240,7 @@ const Swag = () => {
 
                 <button className="w-full md:w-auto">
                   <a
-                    href="https://ctt.ac/eX4AU"
+                    href="https://ctt.ac/cxM88"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
