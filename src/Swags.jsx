@@ -125,14 +125,14 @@ const Swag = () => {
       ctx.font = `bold ${fontSize}px Arial`;
       ctx.fillStyle = "black";
       ctx.textAlign = "center";
-      const textY = canvas.height - canvas.height * 0.29;
+      const textY = canvas.height - canvas.height * 0.30;
       ctx.fillText(name || "Your Name Here", canvas.width / 2, textY);
     };
     templateImage.src = template;
   };
 
   return (
-    <div className="min-h-[100vh] flex items-center py-8 md:py-12 relative bg-gradient-to-r from-[#ae00ff] to-[#000000] text-black">
+    <div className="min-h-[100vh] flex items-center py-8 md:py-12 relative bg-gradient-to-r from-[#ae00ff] to-[#FFFFFF] text-black">
       <div className="container mx-auto px-4 md:px-0">
         <div className="flex justify-center mb-6">
           <h1 className="grad-text text-3xl md:text-5xl font-bold">
