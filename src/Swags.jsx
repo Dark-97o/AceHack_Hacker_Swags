@@ -170,11 +170,11 @@ const Swag = () => {
             <div className="text-center md:text-left mb-4 lg:mb-5">
               <div className="heading mb-8 md:mb-4">
                 <h2 className="text-2xl md:text-4xl grad-text font-bold mb-4 mt-2">
-                  AceHack 4.0 Digital Badge
+                  AceHack 5.0 Digital Badge
                 </h2>
               </div>
               <p className="lg:mb-3 mb-1 font-bold">
-                Ready to rock AceHack 4.0? Show the world your excitement with
+                Ready to rock AceHack 5.0? Show the world your excitement with
                 our exclusive digital badge!
               </p>
               <p className="lg:mb-3 mb-1 font-bold">
