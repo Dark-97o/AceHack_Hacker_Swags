@@ -121,11 +121,11 @@ const Swag = () => {
     const templateImage = new Image();
     templateImage.onload = () => {
       ctx.drawImage(templateImage, 0, 0, canvas.width, canvas.height);
-      const fontSize = canvas.width * 0.055;
+      const fontSize = canvas.width * 0.030;
       ctx.font = `bold ${fontSize}px Arial`;
       ctx.fillStyle = "black";
       ctx.textAlign = "center";
-      const textY = canvas.height - canvas.height * 0.17;
+      const textY = canvas.height - canvas.height * 0.25;
       ctx.fillText(name || "Your Name Here", canvas.width / 2, textY);
     };
     templateImage.src = template;
@@ -178,7 +178,7 @@ const Swag = () => {
                 our exclusive digital badge!
               </p>
               <p className="lg:mb-3 mb-1 font-bold">
-                Personalize your AceHack 4.0 Badge with your name and photo.
+                Personalize your AceHack 5.0 Badge with your name and photo.
                 Download it and spread the word on social media using{" "}
                 <a
                   className="underline hover:text-purple-300"
