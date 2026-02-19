@@ -108,14 +108,8 @@ const Swag = () => {
 
         ctx.drawImage(
           uploadedImage,
-          sx,
-          sy,
-          sWidth,
-          sHeight,
-          0,
-          0,
-          canvas.width,
-          canvas.height
+          sx, sy, sWidth, sHeight,
+          destX, destY, destW, destH  // smaller, centered
         );
       };
       uploadedImage.src = image.src;
