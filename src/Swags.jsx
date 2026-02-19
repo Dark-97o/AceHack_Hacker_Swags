@@ -125,7 +125,7 @@ const Swag = () => {
       ctx.font = `bold ${fontSize}px Arial`;
       ctx.fillStyle = "black";
       ctx.textAlign = "center";
-      const textY = canvas.height - canvas.height * 0.29;
+      const textY = canvas.height - canvas.height * 0.305;
       ctx.fillText(name || "Your Name Here", canvas.width / 2, textY);
     };
     templateImage.src = template;
