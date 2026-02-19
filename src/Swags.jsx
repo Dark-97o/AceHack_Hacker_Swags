@@ -79,7 +79,10 @@ const Swag = () => {
   const drawSwag = () => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    const avatarSize = canvas.width * 0.6; // 60% of canvas width, reduce to make smaller
+    const avatarX = (canvas.width - avatarSize) / 2; // center horizontally
+    const avatarY = (canvas.height - avatarSize) / 2; // center vertically
+    ctx.drawImage(defaultAvatarImg, avatarX, avatarY, avatarSize, avatarSize);
 
     if (image) {
       const uploadedImage = new Image();
@@ -132,7 +135,7 @@ const Swag = () => {
   };
 
   return (
-    <div className="min-h-[100vh] flex items-center py-8 md:py-12 relative bg-gradient-to-r from-[#000000] to-[#FFFFFF] text-black">
+    <div className="min-h-[100vh] flex items-center py-8 md:py-12 relative bg-gradient-to-r from-[#ae00ff] to-[#000000 text-black">
       <div className="container mx-auto px-4 md:px-0">
         <div className="flex justify-center mb-6">
           <h1 className="grad-text text-3xl md:text-5xl font-bold">
