@@ -121,7 +121,7 @@ const Swag = () => {
     const templateImage = new Image();
     templateImage.onload = () => {
       ctx.drawImage(templateImage, 0, 0, canvas.width, canvas.height);
-      const fontSize = canvas.width * 0.0305;
+      const fontSize = canvas.width * 0.030;
       ctx.font = `bold ${fontSize}px Arial`;
       ctx.fillStyle = "black";
       ctx.textAlign = "center";
