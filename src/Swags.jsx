@@ -103,8 +103,8 @@ const Swag = () => {
         const scale = 0.8; // 80% of canvas size
         const destW = canvas.width * scale;
         const destH = canvas.height * scale;
-        const destX = (canvas.width - destW) / 2;
-        const destY = (canvas.height - destH) / 2;
+        const destX = (canvas.width - destW) / 1.9;
+        const destY = (canvas.height - destH) / 1.9;
 
         ctx.drawImage(
           uploadedImage,
@@ -121,11 +121,11 @@ const Swag = () => {
     const templateImage = new Image();
     templateImage.onload = () => {
       ctx.drawImage(templateImage, 0, 0, canvas.width, canvas.height);
-      const fontSize = canvas.width * 0.035;
+      const fontSize = canvas.width * 0.025;
       ctx.font = `bold ${fontSize}px Arial`;
       ctx.fillStyle = "black";
       ctx.textAlign = "center";
-      const textY = canvas.height - canvas.height * 0.29;
+      const textY = canvas.height - canvas.height * 0.35;
       ctx.fillText(name || "Your Name Here", canvas.width / 2, textY);
     };
     templateImage.src = template;
