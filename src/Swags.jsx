@@ -103,8 +103,8 @@ const Swag = () => {
         const scale = 0.8; // 80% of canvas size
         const destW = canvas.width * scale;
         const destH = canvas.height * scale;
-        const destX = (canvas.width - destW) / 2;
-        const destY = (canvas.height - destH) / 2;
+        const destX = (canvas.width - destW) / 2.5;
+        const destY = (canvas.height - destH) / 2.5;
 
         ctx.drawImage(
           uploadedImage,
