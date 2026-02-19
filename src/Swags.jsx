@@ -121,11 +121,11 @@ const Swag = () => {
     const templateImage = new Image();
     templateImage.onload = () => {
       ctx.drawImage(templateImage, 0, 0, canvas.width, canvas.height);
-      const fontSize = canvas.width * 0.030;
+      const fontSize = canvas.width * 0.031;
       ctx.font = `bold ${fontSize}px Arial`;
       ctx.fillStyle = "black";
       ctx.textAlign = "center";
-      const textY = canvas.height - canvas.height * 0.27;
+      const textY = canvas.height - canvas.height * 0.29;
       ctx.fillText(name || "Your Name Here", canvas.width / 2, textY);
     };
     templateImage.src = template;
