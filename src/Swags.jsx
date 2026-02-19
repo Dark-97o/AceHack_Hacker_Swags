@@ -79,10 +79,7 @@ const Swag = () => {
   const drawSwag = () => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
-    const avatarSize = canvas.width * 0.6; // 60% of canvas width, reduce to make smaller
-    const avatarX = (canvas.width - avatarSize) / 2; // center horizontally
-    const avatarY = (canvas.height - avatarSize) / 2; // center vertically
-    ctx.drawImage(defaultAvatarImg, avatarX, avatarY, avatarSize, avatarSize);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     if (image) {
       const uploadedImage = new Image();
