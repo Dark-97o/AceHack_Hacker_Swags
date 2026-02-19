@@ -91,13 +91,13 @@ const Swag = () => {
         if (aspectRatioImage > aspectRatioCanvas) {
           sWidth = uploadedImage.height * aspectRatioCanvas;
           sHeight = uploadedImage.height;
-          sx = (uploadedImage.width - sWidth) / 2;
+          sx = (uploadedImage.width - sWidth) / 3;
           sy = 0;
         } else {
           sWidth = uploadedImage.width;
           sHeight = uploadedImage.width / aspectRatioCanvas;
           sx = 0;
-          sy = (uploadedImage.height - sHeight) / 2;
+          sy = (uploadedImage.height - sHeight) / 3;
         }
 
         ctx.drawImage(
